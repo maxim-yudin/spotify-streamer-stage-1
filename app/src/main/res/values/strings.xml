@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SpotifyStreamer</string>
+
+    <string name="artist_name">Artist name</string>
+    <string name="please_type_artist_name">Please type artist name!</string>
+    <string name="no_artists_are_found_try_search_again">No artists are found. Try to find other artist.</string>
+
+    <string name="no_tracks_are_found">No tracks are found</string>
+
+    <string name="some_error">Some error, probably Internet is not available!</string>
+    <string name="title_activity_top_tracks">Top 10 tracks</string>
+
+</resources>
