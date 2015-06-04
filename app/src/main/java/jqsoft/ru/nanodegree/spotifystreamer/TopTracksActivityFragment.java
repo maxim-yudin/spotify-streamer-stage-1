@@ -49,6 +49,9 @@ public class TopTracksActivityFragment extends ListFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        int horizontalPadding = getResources().getDimensionPixelSize(R.dimen.activity_horizontal_margin);
+        getListView().setPadding(horizontalPadding, 0, horizontalPadding, 0);
+        getListView().setScrollBarStyle(View.SCROLLBARS_OUTSIDE_OVERLAY);
         if (savedInstanceState == null) {
             new GetTopTracksTask().execute(getArtistId());
         }
