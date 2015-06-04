@@ -130,6 +130,10 @@ public class MainActivityFragment extends ListFragment {
                 return;
             }
 
+            if (result.artists.items.size() == 0) {
+                Toast.makeText(getActivity(), R.string.no_artists_are_found_try_search_again, Toast.LENGTH_SHORT).show();
+            }
+
             setEmptyText(getString(R.string.no_artists_are_found_try_search_again));
 
             ArrayList<Map<String, String>> artistList = new ArrayList<>(
